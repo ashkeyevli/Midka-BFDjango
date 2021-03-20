@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_jwt',
+    'auth_',
+    'books'
 ]
 
 MIDDLEWARE = [
@@ -71,7 +73,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Midka_BFDjango.wsgi.application'
-AUTH_USER_MODEL = 'main.MainUser'
+AUTH_USER_MODEL = 'auth_.MainUser'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
